@@ -1,14 +1,12 @@
+/* C++ Program to search an element 
+* in a sorted and pivoted array
+*/
+
 #include <bits/stdc++.h> 
 using namespace std;
 
-void printArray(int a[], int size){
-  for(int i = 0; i < size; i++){
-    cout << a[i] << " ";
-  }
-  cout<<"\n";
-}
-/* Function to get pivot. For array 3, 4, 5, 6, 1, 2 
-*  it returns 3 (index of 6) 
+/* Function to get pivot. 
+*  For array 3, 4, 5, 6, 1, 2, it returns 3 (index of 6) 
 */
 int findPivot(int a[], int l, int h){
   if(h < l)
